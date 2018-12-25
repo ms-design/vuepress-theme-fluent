@@ -1,0 +1,60 @@
+{
+  "name": "vuepress-theme-fluent",
+  "version": "0.0.1",
+  "description": "VuePress theme that implements Microsoft's Fluent Design",
+  "main": "index.js",
+  "files": [
+    "components",
+    "global-components",
+    "layouts",
+    "styles",
+    "util",
+    "index.js",
+    "noopModule.js"
+  ],
+  "scripts": {
+    "commit": "git-cz"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "node scripts/verify-commit-msg.js"
+  },
+  "lint-staged": {
+    "*.js": [
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ms-design/vuepress-theme-fluent.git"
+  },
+  "keywords": [
+    "theme",
+    "vuepress",
+    "vuepress-theme"
+  ],
+  "author": "pyyzcwg2833 <pyyzcwg2833@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ms-design/vuepress-theme-fluent/issues"
+  },
+  "homepage": "https://github.com/ms-design/vuepress-theme-fluent#readme",
+  "dependencies": {
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "@vuepress/plugin-active-header-links": "^1.0.0-alpha.30",
+    "@vuepress/plugin-search": "^1.0.0-alpha.30",
+    "chalk": "^2.4.1",
+    "commitizen": "^3.0.5",
+    "docsearch.js": "^2.5.2",
+    "lint-staged": "^8.1.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vuepress-plugin-nprogress": "^0.1.0",
+    "yorkie": "^2.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
